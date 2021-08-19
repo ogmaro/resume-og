@@ -61,7 +61,7 @@ router.post('/', async (req, res) => {
     .catch((error) => {
       console.log(error.message);
     });
-  console.log('https://' + req.headers.host + req.url);
+  console.log('http://' + req.headers.host );
   res.redirect('httsp://' + req.headers.host + req.url);
 });
 
