@@ -62,7 +62,7 @@ router.post('/', async (req, res) => {
       console.log(error.message);
     });
   console.log('https://' + req.headers.host + req.url);
-  res.redirect(`http://localhost:${PORT}`);
+  res.redirect('httsp://' + req.headers.host + req.url);
 });
 
 module.exports = router;
