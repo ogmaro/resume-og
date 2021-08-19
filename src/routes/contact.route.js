@@ -56,13 +56,13 @@ router.post('/', async (req, res) => {
   sendmail
     .send(msg)
     .then((res) => {
-      console.log(msg);
+      console.log('https://resume-og.herokuapp.com/');
     })
     .catch((error) => {
       console.log(error.message);
     });
-  console.log('http://' + req.headers.host );
-  res.redirect('httsp://' + req.headers.host + req.url);
+
+  res.redirect('https://resume-og.herokuapp.com/');
 });
 
 module.exports = router;
