@@ -61,6 +61,7 @@ router.post('/', async (req, res) => {
     .catch((error) => {
       console.log(error.message);
     });
+  console.log('https://' + req.headers.host + req.url);
   res.redirect(`http://localhost:${PORT}`);
 });
 
